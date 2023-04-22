@@ -37,6 +37,7 @@ public class UserService {
        // oldUser.setAddress(user.getAddress());
         oldUser.setName(user.getName());
         oldUser.setPhone(user.getPhone());
+        oldUser.setRole(user.getRole());
 
         return repo.save(oldUser);
     }
