@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://share-management-api-db.flycast:5432/share_management_api?sslmode=disable
+    username: share_management_api
+    password: DsgmbPScCIEgZrA
+  sql:
+    init:
+      mode: always
+  jpa:
+    # Hibernate is an ORM (Object Relational Mapper)
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
