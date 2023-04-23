@@ -50,7 +50,7 @@ public class ShareholderController {
         return new ResponseEntity<>(shareholderService.getshareholder(id), HttpStatus.OK);
     }
 @CrossOrigin(origins = "http://localhost:4200")
-    @GetMapping("/api/shareholders")
+    @GetMapping("/shareholders")
     public ResponseEntity<List<Shareholder>> getAllShareholders () {
         return new ResponseEntity<>(shareholderService.getAll_Shareholders(), HttpStatus.OK);
     }

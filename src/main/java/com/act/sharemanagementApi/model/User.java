@@ -92,7 +92,13 @@ public class User {
     }
 
 
+    public String getRole() {
+        return role;
+    }
 
+    public void setRole(String role) {
+        this.role = role;
+    }
 
 
     @Override
@@ -105,6 +111,7 @@ public class User {
                 ", name='" + fullname + '\'' +
                // ", address='" + address + '\'' +
                 ", phone='" + phone + '\'' +
+                ", role='" + role + '\'' +
                // ", cartItems=" + cartItems +
                 '}';
     }
